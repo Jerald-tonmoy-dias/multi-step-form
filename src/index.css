@@ -8,4 +8,7 @@
   html {
   font-family: 'Inter', sans-serif;
   }
+  .custom-px-40 {
+        padding: 10px 40px 10px 40px!important;
+  }
 }
