@@ -10,6 +10,22 @@ import Information from './components/Information';
 import Confirmation from './components/Confirmation';
 
 function App() {
+  // top navigation title state
+  const [navigationTitle, setNavigationTitle] = useState([
+    {
+      title: 'your feedback',
+      complete: false
+    },
+    {
+      title: 'your information',
+      complete: false
+    },
+    {
+      title: 'confirmation',
+      complete: false
+    }
+  ]);
+
 
 
   return (
@@ -18,7 +34,7 @@ function App() {
       <div className='bg-template_section_bg_gray flex justify-center items-center py-150'>
         <div className='  bg-white drop-shadow-lg rounded-20'>
           {/* top navbar */}
-          <TopNavbar />
+          <TopNavbar navigationTitle={navigationTitle} />
 
           {/* seperator */}
           <hr />
@@ -26,13 +42,13 @@ function App() {
           {/* component wrapper*/}
           <form action="#" className='mx-12 py-8'>
             {/* feedback component */}
-            {/* <Feedback /> */}
+            <Feedback />
 
             {/* information component */}
             {/* <Information /> */}
 
             {/* confirmation component */}
-            <Confirmation />
+            {/* <Confirmation /> */}
           </form>
 
 

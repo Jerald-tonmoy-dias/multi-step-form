@@ -11,4 +11,7 @@
   .custom-px-40 {
         padding: 10px 40px 10px 40px!important;
   }
+  .h-100-percent {
+    height: 100%!important;
+  }
 }
