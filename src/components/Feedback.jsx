@@ -9,32 +9,23 @@ export default function Feedback() {
         </span>
         <div className="flex ml-6 mt-4">
           <label>
-            <input type="radio" class="peer sr-only" />
-            <span class="h-4 w-4 bg-gray-200 peer-checked:bg-blue-400">
+            <input type="checkbox" checked className="peer hidden" />
+            <span className="bg-template_btn_bg_gray px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
               test
             </span>
           </label>
-          {/* <label>
-            <span
-              className="text-black  capitalize peer-checked:bg-blue-100 px-5 text-center py-1 rounded-sm"
-              htmlFor="bad"
-            >
-              bad
-            </span>
-            <input className="hidden peer" type="radio" name="bad" id="bad" />
-          </label> */}
-          <div className="bg-template_btn_bg_gray px-5 text-center py-1 rounded-sm mx-4">
-            <label className="text-black capitalize" htmlFor="okay">
+          <label>
+            <input type="checkbox" className="peer hidden" />
+            <span className="bg-template_btn_bg_gray px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
               okay
-            </label>
-            <input className="hidden" type="radio" name="okay" id="okay" />
-          </div>
-          <div className="bg-blue-100 px-5 text-center py-1 border-blue-400 border rounded">
-            <label className="text-black capitalize" htmlFor="good">
+            </span>
+          </label>
+          <label>
+            <input type="checkbox" className="peer hidden" />
+            <span className="bg-template_btn_bg_gray px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
               good
-            </label>
-            <input className="hidden" type="radio" name="good" id="good" />
-          </div>
+            </span>
+          </label>
         </div>
       </div>
       <div className="">
