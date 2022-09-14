@@ -11,11 +11,25 @@ export default function BottomNavigation({
     console.log("data paisi", navigationTitle);
   }, []);
 
+  // handle next button
+  const handleNextButton = () => {
+    setCountSteps((prevCountSteps) => prevCountSteps + 1);
+    setNavigationTitle([...navigationTitle], [navigationTitle[countSteps].complete = true]);
+
+
+  }
+
+  // handle back button
+  const handleBackButton = () => {
+    setCountSteps((prevCountSteps) => prevCountSteps - 1);
+    setNavigationTitle([...navigationTitle], [navigationTitle[countSteps].complete = false]);
+  }
+
   return (
     <div className="mx-12 py-8 flex justify-end">
       {countSteps > 0 ? (
         <button
-          onClick={() => setCountSteps((prevCountSteps) => prevCountSteps - 1)}
+          onClick={() => handleBackButton()}
           className="bg-template_btn_bg_gray text-black rounded-10 capitalize custom-px-40 mr-4"
         >
           back
@@ -25,7 +39,7 @@ export default function BottomNavigation({
       )}
       {countSteps < navigationTitle.length - 1 ? (
         <button
-          onClick={() => setCountSteps((prevCountSteps) => prevCountSteps + 1)}
+          onClick={() => handleNextButton()}
           className={`bg-blue-500 text-white rounded-10 capitalize custom-px-40 mr-4 `}
         >
           next
