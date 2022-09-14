@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function BottomNavigation({
   setCountSteps,
@@ -6,10 +6,7 @@ export default function BottomNavigation({
   navigationTitle,
   setNavigationTitle,
 }) {
-  // useEffect
-  useEffect(() => {
-    console.log("data paisi", navigationTitle);
-  }, []);
+
 
   // handle next button
   const handleNextButton = () => {
