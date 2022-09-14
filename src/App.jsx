@@ -10,11 +10,6 @@ import Information from "./components/Information";
 import Confirmation from "./components/Confirmation";
 
 function App() {
-
-  /*
-  **********   states  ***********
-  */
-
   // Count stpes
   const [countSteps, setCountSteps] = useState(0);
 
@@ -34,19 +29,13 @@ function App() {
     },
   ]);
 
-  /*
-  **********   functions  ***********
-  */
-
+  // display content
   const displayComponent = () => {
     switch (countSteps) {
       case 1:
         return <Information />;
-        break;
       case 2:
         return <Confirmation />;
-        break;
-
       default:
         return <Feedback />;
     }
@@ -56,7 +45,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="bg-template_section_bg_gray flex justify-center items-center py-150">
-        <div className="bg-white drop-shadow-lg rounded-20">
+        <div className="bg-white drop-shadow-lg rounded-20 mx-8">
           {/* top navbar */}
           <TopNavbar
             navigationTitle={navigationTitle}

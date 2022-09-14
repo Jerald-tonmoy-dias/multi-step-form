@@ -28,10 +28,10 @@ export default function TopNavbar({ navigationTitle, countSteps }) {
                 </span> : ''}
 
                 <span
-                  className={`${navigation.complete === true
+                  className={`${navigation.complete === true || countSteps == index
                     ? "text-black"
                     : "text-deactive_text_color"
-                    } text-md font-bold  capitalize`}
+                    } text-md font-bold  capitalize hidden md:inline-block`}
                 >
                   {" "}
                   {navigation.title}
