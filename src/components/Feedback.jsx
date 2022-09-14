@@ -11,7 +11,7 @@ export default function Feedback() {
           <label>
             <input defaultChecked type="checkbox" className="peer hidden" />
             <span className="bg-template_btn_bg_gray cursor-pointer px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
-              test
+              bad
             </span>
           </label>
           <label>
@@ -28,29 +28,26 @@ export default function Feedback() {
           </label>
         </div>
       </div>
-      <div className="">
+      <div>
         <span className="text-black text-lg font-semibold capitalize">
           02. Do you feel you're making difference?
         </span>
-        <div className="flex ml-6 mt-4">
-          <div className="bg-template_btn_bg_gray px-6 py-3 text-center rounded-sm">
-            <input className="mr-2" type="checkbox" name="yes" id="yes" />
-            <label className="text-black capitalize" htmlFor="yes">
+        <div className="flex ml-8 mt-4">
+          <label className="relative cursor-pointer flex justify-center items-center text-center w-24 h-12 mr-8">
+            <input type="checkbox" className="peer mr-2 -mt-1" />
+            <span className="text-black capitalize" htmlFor="no">
               Yes
-            </label>
-          </div>
-          <label className="peer-checked:bg-blue-100 peer-checked:border-blue-400 border rounded  px-6 py-3 text-center  ml-4">
-            <input className="mr-2 peer " type="checkbox" name="yes" id="no" />
+            </span>
+            <span className="absolute top-0 left-0 -z-10 peer-checked:bg-blue-100 w-24 h-12 bg-template_btn_bg_gray peer-checked:border-blue-400 border  rounded inline-block"></span>
+          </label>
+          <label className="relative cursor-pointer flex justify-center items-center text-center w-24 h-12">
+            <input type="checkbox" className="peer mr-2 -mt-1" />
             <span className="text-black capitalize" htmlFor="no">
               No
             </span>
+            <span className="absolute top-0 left-0 -z-10 peer-checked:bg-blue-100 w-24 h-12 bg-template_btn_bg_gray peer-checked:border-blue-400 border  rounded inline-block"></span>
           </label>
-          {/* <div className="bg-blue-100 border-blue-400 border rounded  px-6 py-3 text-center  ml-4">
-            <input className="mr-2 " type="checkbox" name="yes" id="no" />
-            <label className="text-black capitalize" htmlFor="no">
-              No
-            </label>
-          </div> */}
+
         </div>
       </div>
     </>

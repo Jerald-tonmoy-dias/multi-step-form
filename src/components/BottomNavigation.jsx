@@ -13,7 +13,6 @@ export default function BottomNavigation({
 
   return (
     <div className="mx-12 py-8 flex justify-end">
-      {/* if countStep > 0 then show back button */}
       {countSteps > 0 ? (
         <button
           onClick={() => setCountSteps((prevCountSteps) => prevCountSteps - 1)}

@@ -10,7 +10,11 @@ import Information from "./components/Information";
 import Confirmation from "./components/Confirmation";
 
 function App() {
-  //**********   states  ***********//
+
+  /*
+  **********   states  ***********
+  */
+
   // Count stpes
   const [countSteps, setCountSteps] = useState(0);
 
@@ -30,7 +34,9 @@ function App() {
     },
   ]);
 
-  //**********   functions  ***********//
+  /*
+  **********   functions  ***********
+  */
 
   const displayComponent = () => {
     switch (countSteps) {
@@ -63,22 +69,12 @@ function App() {
           {/* component wrapper*/}
           <form action="#" className="mx-12 py-8">
             {displayComponent()}
-            {/* feedback component */}
-            {/* <Feedback /> */}
-
-            {/* information component */}
-            {/* <Information /> */}
-
-            {/* confirmation component */}
-            {/* <Confirmation /> */}
           </form>
 
           {/* bottom navigation */}
           <BottomNavigation
-            // count component
             setCountSteps={setCountSteps}
             countSteps={countSteps}
-            //navigationTitle
             navigationTitle={navigationTitle}
             setNavigationTitle={setNavigationTitle}
           />
