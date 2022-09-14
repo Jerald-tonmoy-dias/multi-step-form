@@ -1,5 +1,6 @@
 import React from "react";
 import rac from "../assets/ractangle.png";
+import checkIcon from "../assets/checked.png";
 export default function TopNavbar({ navigationTitle, countSteps }) {
   return (
     <>
@@ -20,6 +21,9 @@ export default function TopNavbar({ navigationTitle, countSteps }) {
                 >
                   {index + 1}
                 </span>
+                {/* <span className={`  text-4xl font-bold inline-block mr-4`}>
+                  <img src={checkIcon} alt="" />
+                </span> */}
                 <span
                   className={`${
                     countSteps == index
