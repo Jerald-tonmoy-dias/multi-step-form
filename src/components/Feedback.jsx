@@ -9,20 +9,20 @@ export default function Feedback() {
         </span>
         <div className="flex ml-6 mt-4">
           <label>
-            <input type="checkbox" checked className="peer hidden" />
-            <span className="bg-template_btn_bg_gray px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
+            <input defaultChecked type="checkbox" className="peer hidden" />
+            <span className="bg-template_btn_bg_gray cursor-pointer px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
               test
             </span>
           </label>
           <label>
             <input type="checkbox" className="peer hidden" />
-            <span className="bg-template_btn_bg_gray px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
+            <span className="bg-template_btn_bg_gray cursor-pointer px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
               okay
             </span>
           </label>
           <label>
             <input type="checkbox" className="peer hidden" />
-            <span className="bg-template_btn_bg_gray px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
+            <span className="bg-template_btn_bg_gray cursor-pointer px-5 capitalize py-2 border rounded mx-4 border-template_btn_bg_gray peer-checked:bg-blue-100 peer-checked:border-blue-400">
               good
             </span>
           </label>
@@ -39,12 +39,18 @@ export default function Feedback() {
               Yes
             </label>
           </div>
-          <div className="bg-blue-100 border-blue-400 border rounded  px-6 py-3 text-center  ml-4">
+          <label className="peer-checked:bg-blue-100 peer-checked:border-blue-400 border rounded  px-6 py-3 text-center  ml-4">
+            <input className="mr-2 peer " type="checkbox" name="yes" id="no" />
+            <span className="text-black capitalize" htmlFor="no">
+              No
+            </span>
+          </label>
+          {/* <div className="bg-blue-100 border-blue-400 border rounded  px-6 py-3 text-center  ml-4">
             <input className="mr-2 " type="checkbox" name="yes" id="no" />
             <label className="text-black capitalize" htmlFor="no">
               No
             </label>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
