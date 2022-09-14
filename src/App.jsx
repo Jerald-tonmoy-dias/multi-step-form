@@ -52,7 +52,10 @@ function App() {
       <div className="bg-template_section_bg_gray flex justify-center items-center py-150">
         <div className="bg-white drop-shadow-lg rounded-20">
           {/* top navbar */}
-          <TopNavbar navigationTitle={navigationTitle} />
+          <TopNavbar
+            navigationTitle={navigationTitle}
+            countSteps={countSteps}
+          />
 
           {/* seperator */}
           <hr />
